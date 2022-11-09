@@ -1,0 +1,10 @@
+-Firstly create 2 variables for computer choice and player choice respectively. They can also be created in the function itself with discretion. Player choice variable should take input from the user and must be case insensitive.
+
+-There should be a function that takes the 2 created variables and plays the rock-paper-scissors game for one round.
+
+-After the game, return a string like "You won! Paper beats rock.".
+
+-Then write a new function that plays the game in a BO5 style. (Loops?)
+
+
+
