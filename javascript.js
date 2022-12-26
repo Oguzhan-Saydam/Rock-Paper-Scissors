@@ -16,11 +16,11 @@ function getComputerChoice() {
 
 //console.log(getComputerChoice());
 
-let playerSelection = prompt("Select");
+let playerSelection = prompt("Select your weapon!");
 playerSelection = playerSelection.toLowerCase();
 const computerSelection = getComputerChoice();
 
-function playRound(playerSelection, computerSelection) {
+function playRound(playerSelection, computerSelection) {    
     if (playerSelection == "rock" && computerSelection == "scissors") {
         return "You won! Rock beats scissors"
     } else if (playerSelection == "paper" && computerSelection == "rock") {
@@ -33,16 +33,23 @@ function playRound(playerSelection, computerSelection) {
         return "You lost! Rock beats scissors"
     } else if (playerSelection == "paper" && computerSelection == "scissors") {
         return "You lost! Scissors beats paper"
-    } else if (playerSelection == "rock" && computerSelection == "rock") {
-        return "Draw!"
-    } else if (playerSelection == "paper" && computerSelection == "paper") {
-        return "Draw!"
-    } else if (playerSelection == "scissors" && computerSelection == "scissors") {
+    } else if (playerSelection == computerSelection) {
         return "Draw!"
     } else {
         return "Please enter a valid value!"
-    }
-}
+    }}
 
+//"rock" && computerSelection == "rock") {
+//    return "Draw!"
+//} else if (playerSelection == "paper" && computerSelection == "paper") {
+//    return "Draw!"
+//} else if (playerSelection == "scissors" && computerSelection == "scissors") {
 
-console.log(playRound(playerSelection, computerSelection));
+function game() {
+    for (let i = 0; i < 5; i++) {
+        playRound();
+    }}
+
+console.log(game())    
+
+//console.log(playRound(playerSelection, computerSelection));
